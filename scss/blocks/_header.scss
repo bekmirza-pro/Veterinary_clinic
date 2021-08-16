@@ -1,0 +1,200 @@
+.header-top {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  padding: 11px 20px 11px 80px;
+  margin: 0 auto;
+  background-color: #f9f8f8;
+}
+
+.site-nav {
+  // margin-left: 100px;
+  background-color: #f9f8f8;
+}
+.tell-link {
+  margin-right: 15px;
+  font-size: 14px;
+  text-decoration: none;
+  color: #333a44;
+}
+.tell-link:hover {
+  color: #fcb72b;
+}
+.tell-link:active {
+  color: #333333;
+
+  opacity: 0.6;
+}
+.probel {
+  margin-left: 10px;
+}
+.header-bottom {
+  padding: 15px 0;
+  margin: 0;
+  margin: 0 auto;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.header-bottom-link {
+  display: flex;
+  align-items: center;
+  color: #333333;
+  text-decoration: none;
+}
+.header-bottom-box {
+  display: flex;
+  align-items: center;
+
+  justify-content: space-between;
+}
+.header-bottom-item {
+  display: flex;
+  align-items: center;
+  margin-left: 40px;
+}
+.header-bottom-item:hover {
+  box-shadow: 0 3px 0 0 #f4ffad;
+}
+.header-bottom-item:active {
+  opacity: 0.5;
+  box-shadow: 0 3px 0 0 #f4ffad;
+}
+.header-bottom-link_logo {
+  position: absolute;
+  transform: translateX(-70%);
+}
+.humburger_btn {
+  z-index: 31;
+  display: none;
+}
+.header-top-icon {
+  margin-right: 15px;
+}
+.icon-circle {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  transform: translateY(180%) translateX(-280%);
+  border-radius: 50%;
+  background-color: #fcb72b;
+}
+@media only screen and (max-width: 1260px) {
+  .header-bottom-link_logo {
+    display: none;
+  }
+}
+@media only screen and (max-width: 1110px) {
+  .header-top-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .header-top{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .header-top-item{
+    margin-bottom: 10px;
+  }
+  .icon-circle {
+    display: none;
+  }
+
+  .header-bottom-item {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+  }
+}
+.header-bottom-link_logo:hover path {
+  // fill:;
+  opacity: 0.7;
+}
+.header-bottom-link_logo:active path {
+  // fill:;
+  opacity: 0.4;
+}
+@media only screen and (max-width: 790px) {
+  .site-nav {
+    display: none;
+  }
+  .header-bottom {
+    display: none;
+  }
+  .header-bottom-link_logo {
+    position: relative;
+    display:block;
+    transform: translateX(-10%);
+    // margin-left: auto;
+  }
+  .header-item {
+    width: 100%;
+    max-width: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  .header-bottom-link {
+    display: none;
+  }
+  .header-right {
+    display: none;
+  }
+  .left-box {
+    margin: 0 auto;
+  }
+  .header--adaptive .site-nav {
+    display: block;
+    position: fixed;
+    top: 20%;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 75%;
+    height: auto;
+    background-color: #333a44;
+    z-index: 20;
+  }
+  .header--adaptive .header-top {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    padding: 100px 33px;
+  }
+  .header--adaptive .header-top .header-top-item {
+    display: inline-block;
+    width: 100%;
+    // max-width: 410px;
+    text-align: left;
+    // margin-right: auto;
+    margin-bottom: 32px;
+    margin-left: 0;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 32px;
+    color: #e5ecf4;
+  }
+  .header--adaptive .header-right {
+    z-index: 33;
+    position: absolute;
+    display: block;
+    top: 450%;
+    left: 15%;
+    // transform: translateX(65%);
+  }
+  .humburger_btn {
+    display: block;
+    border: none;
+    background-color: #fff;
+    order: -1;
+  }
+}

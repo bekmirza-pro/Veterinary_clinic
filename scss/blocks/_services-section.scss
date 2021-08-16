@@ -1,0 +1,82 @@
+.services-section .container {
+    width: 100%;
+    max-width: 1400px;
+    margin-bottom: 150px;
+}
+
+.services-list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.services-list-item {
+    width: 100%;
+    max-width: 310px;
+    margin-bottom: 35px;
+    padding: 0px 2px 45px 50px;
+    border-radius: 5px 5px 0px 0px;
+    background-color: #fff;
+}
+
+.services-list-item:hover {
+    box-shadow: 0px 0px 10px 5px rgb(218, 218, 218);
+}
+
+.list-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 20px;
+}
+
+.services-heading {
+    width: 100%;
+    max-width: 230px;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 34px;
+    color: #333333;
+}
+
+.services-paragraf {
+    width: 100%;
+    max-width: 230px;
+    margin-bottom: 35px;
+    font-size: 16px;
+    line-height: 20px;
+    color: #949494;
+}
+
+.services-link {
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 3px;
+    color: #FFFFFF;
+    background-color: #FFBD54;
+}
+
+.services-link:hover {
+    color: white;
+    background-color: #333333;
+}
+
+.services-list-item:nth-child(2n) .services-link {
+    background-color: #78C0DE;
+}
+
+.services-list-item:nth-child(2n) .services-link:hover {
+    color: white;
+    background-color: #333333;
+}
+
+@media only screen and (max-width: 550px) {
+    .services-list-item {
+        padding: 0px 2px 45px 30px;
+    }
+}

@@ -1,0 +1,70 @@
+.health-section .container {
+  width: 100%;
+  max-width: 1550px;
+  margin-bottom: 50px;
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.health-heading {
+  font-size: 70px;
+  line-height: 64px;
+  color: #333333;
+}
+.health-paragraf {
+  width: 100%;
+  max-width: 447px;
+  font-size: 16px;
+  line-height: 20px;
+  color: #949494;
+}
+.health-info {
+  padding: 0px 0px 0px 177px;
+}
+.bengal-cat{
+  margin-right:150px;
+  margin-left: 40px;
+}
+@media only screen and (max-width: 960px) {
+  .health-info {
+    padding: 0px 0px 0px 77px;
+  }
+  .health-heading {
+    font-size: 36px;
+    margin-bottom: 0;
+  }
+  .parrot {
+    width: 50%;
+  }
+  .bengal-cat{
+    width: 50%;
+  }
+  .health-paragraf {
+    margin-top: 0;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .health-info {
+    padding: 0px 0px 0px 37px;
+  }
+  .health-heading {
+    font-size: 22px;
+    margin-bottom: 0;
+  }
+  .health-paragraf {
+    font-size: 13px;
+  }
+}
+@media only screen and (max-width: 500px) {
+    .parrot{
+        display: none;
+    }
+    .bengal-cat{
+      display: none;
+    }
+    .health-info {
+        padding: 0;
+        text-align: center;
+    }
+}
